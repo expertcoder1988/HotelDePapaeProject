@@ -1,0 +1,30 @@
+﻿.textNormal
+{
+    width:60;
+    height:80px;
+    }
+.pageData
+{
+    width:583px;
+   
+    padding:10px;
+    margin:9px;
+    display:table;
+    border-radius:1em;
+}
+.pageData .c1
+{
+   float:left;
+   width:120px;
+   border:1px solid #fff;
+   height:110px;
+   margin-left:18px;
+   margin-top:15px;
+   text-align:center;
+   border-radius:0.2em;
+}
+.c1 img
+{
+ margin-top:10px;
+ position:relative;
+}

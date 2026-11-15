@@ -1,0 +1,201 @@
+﻿@{
+    ViewBag.Title = "Contact Us | Hotel de Papae Islamabad Contact Number";
+
+    ViewBag.keywords = "Islamabad hotels contact number/ Hotel de Papae Islamabad contact number ";
+    ViewBag.canonical = "https://hoteldepapae.com/contact-depapae-hotel-islamabad";
+    ViewBag.Description = "For reservation & other queries, call at +92 300 5550240 Hotel de Papae Islamabad contact number. Email to info@hoteldepapae.com  or visit our website.";
+}
+
+<style>
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+</style>
+
+<!-- Sub banner start -->
+<div class="sub-banner">
+    <div class="overlay">
+        <div class="container">
+            <div class="breadcrumb-area">
+                <h1>Contact Hotel de Papae Islamabad</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Get In Touch</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+<!-- Contact 1 start -->
+<div class="contact-1 content-area-7">
+    <div class="container">
+        @{ 
+            if (TempData["msg"] != null)
+            {
+                <p>@TempData["msg"].ToString() </p>
+            }
+        }
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h3 style="color:black">
+                Get in Touch With Us – Dial De Papae Contact Number
+            </h3>
+            <p>
+                Here you can find the Hotel De Papae Islamabad contact number. Hotel De Papae Islamabad is committed to providing the best possible experience for our guests. At Hotel De Papae Islamabad, we want to ensure that you have all the information you need to make a booking and enjoy your stay with us. Our contact page provides all the details you need to contact us, including our phone number, email address and location. We also offer a map of the hotel depapae area so you can easily find us.
+            </p>
+            <p>
+                We look forward to hearing from you soon.
+            </p>
+        </div>
+        <div class="bg-white">
+            <div class="row g-0">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-pad2">
+                    <!-- Contact form start -->
+                    <div class="contact-form contact-pad">
+                        <h3>Send us a Message</h3>
+                        @using (Html.BeginForm("Contact", "Contact", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group name">
+                                        <input type="text" name="name" required class="form-control" placeholder="Name" aria-label="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group email">
+                                        <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group subject">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group number">
+                                        <input type="text" name="phone" required class="form-control" placeholder="Phone" aria-label="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group message">
+                                        <textarea class="form-control" required name="message" placeholder="Write message" aria-label="Write message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send-btn text-center">
+                                        <button type="submit" class="button-md button-theme btn-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        </div>
+                    <!-- Contact form end -->
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-pad2">
+                    <!-- Contact details start -->
+                    <div class="contact-details">
+                        <h3>Opening Hours</h3>
+                        <div class="ci-box d-flex">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="detail align-self-center">
+                                <h4>Office Address</h4>
+                                <p>Hotel ḏe Papáe (INTL) 16-D West, Blue Area, Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="ci-box d-flex">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="detail align-self-center">
+                                <h4>Phone Number</h4>
+                                <p>
+
+                                    Office: +92 51 2273427
+
+                                    Mobile: +92 300 5550240
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ci-box d-flex">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="detail align-self-center">
+                                <h4>Email Address</h4>
+                                <p>
+                                    <a href="mailto:info@hoteldepapae.com">info@hoteldepapae.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        @*<div class="ci-box d-flex mb-30">
+                            <div class="icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="detail align-self-center">
+                                <h4>General Manager:</h4>
+                                <p>
+                                    Iqbal Khan
+                                </p>
+                            </div>
+                        </div>*@
+
+                        <h3>Follow Us</h3>
+                        <ul class="social-list clearfix">
+                            <li>
+                                <a href="https://www.facebook.com/hoteldepapae" class="facebook-bg">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/hoteldepapae" class="twitter-bg">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/hoteldepapae/" class="instagram-bg">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.hoteldepapae.com/#" class="google-bg">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact details end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact 1 end -->
+<!-- Google map start -->
+<div class="section">
+    <div class="map">
+        <div class="map-responsive">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.542302432622!2d73.07677951469003!3d33.720790442572365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf8382676931%3A0xe6b0cc1d56480f9!2sHotel%20de%20Pap%C3%A1e%20(Intl)!5e0!3m2!1sen!2sus!4v1656680262324!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Google map end -->

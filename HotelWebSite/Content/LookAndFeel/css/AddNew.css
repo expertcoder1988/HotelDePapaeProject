@@ -1,0 +1,28 @@
+﻿ .AddNew
+{
+    width:90px;
+    height:30px;
+    border:2px solid #fff;
+    border-radius:0.3em;
+    text-align:center;
+    margin-left:60px;
+    margin-top:5px;
+    margin-bottom:10px;
+    background-image:url(../images/logout.jpg);
+    margin-left:20px;
+}
+.AddNew a
+{
+    line-height:30px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+.AddNew:hover
+{
+   border:2px solid #000;
+}
+.AddNew a:hover
+{
+    color:Orange;
+}

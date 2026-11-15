@@ -1,0 +1,111 @@
+﻿@model List<HotelWebSiteMVC.Models.Booking>
+@{
+    ViewBag.Title = "BookingsList";
+}
+
+<div style="width:100%;overflow:auto;margin:0">
+    <table class="table dt-responsive nowrap table-hover" width="100%" id="bookings">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Customer Name</th>
+                <th>Mobile No.</th>
+                <th>Room Category</th>
+                <th>Reservation</th>
+                <th>CheckIn</th>
+                <th>CheckOut</th>
+                <th>Adults</th>
+                <th>Children</th>
+                <th>Amount Paid</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.BookingID
+                        </td>
+                        <td>
+                            @item.
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+
+
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        oTable = $('#bookings').DataTable({
+            processing: true, // for show progress bar
+            serverSide: false, // for process server side
+            filter: true, // this is for disable filter (search box)
+            orderMulti: false, // for disable multiple column at once
+            pageLength: 15,
+            order: [[1, "asc"]],
+            responsive: true,
+            filter: false,
+            lengthChange: false,
+            searching: false,
+            destroy: true,
+            dom: 'lrt',
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'print',
+                    text: 'Print',
+                    autoPrint: true,
+                    title: "Bookings List",
+
+                },
+                {
+                    extend: 'excel',
+                    autoPrint: true,
+                    title: "Bookings List",
+                }
+            ],
+            columns: [
+                { orderable: true },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+                { orderable: false },
+            ]
+
+        });
+</script>

@@ -1,0 +1,144 @@
+﻿body 
+{
+    background-color:Gray;
+}
+.khan
+{
+    width:96%;
+    height:auto;
+    border:10px solid #000;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:0.5em;
+    background-image:url(../images/test.jpg);
+}
+.khan .data
+{
+    width:100%;
+    height:auto;
+    border:1px solid #8888;
+    display:table;
+    margin:0;
+    padding:5px;
+}
+.data .sideMenu
+{
+    border-radius:0.3em;
+    overflow:hidden;
+    width:20%;
+    height:auto;
+    border:6px solid #fff;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    float:left;
+    background-image:url(../images/side.jpg);
+}
+.data .maincontent
+{
+ width:74.5%;
+ border:6px solid #fff;
+ margin-top:10px;
+ margin-bottom:10px;
+ margin-left:10px;
+ float:left;
+ border-radius:0.3em;
+ background-image:url(../images/bbbb.jpg);
+ height:auto;
+
+}
+.khan .header
+{
+    width: 99%;
+    border: 6px solid #fff;
+    height: 150px;
+    background-image: url('../images/1000banner.JPG');
+}
+
+.khan ul
+{
+    margin:0;
+    padding:19px;
+    
+}
+.khan ul li
+{
+    color:#fff;
+    border-bottom:1px dotted #000;
+    
+    
+}
+.khan ul li a
+{
+    color : #fff;
+    text-decoration:none;
+    font-size:smaller;
+    font-family:Arial;
+}
+.khan ul li a:hover
+{
+    color:Black;
+    font-weight:300;
+   
+}
+.khan ul li a:active
+{
+    color:Green;
+}
+ .logout
+{
+    width:90px;
+    height:30px;
+    border:2px solid #fff;
+    border-radius:0.3em;
+    text-align:center;
+    margin-left:60px;
+    margin-top:5px;
+    margin-bottom:10px;
+    background-image:url(../images/logout.jpg);
+}
+.logout a
+{
+    line-height:30px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+.logout:hover
+{
+   border:2px solid #000;
+}
+.logout a:hover
+{
+    color:Orange;
+}
+.headerText
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #FFFF91;
+}
+
+.footer
+{
+   width:99%;
+   height:100px;
+   background-image:url(../images/bbbb.jpg);
+   border:6px solid #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #FFF;
+   font-weight:bold;
+   font-size:11px;   }
+   
+.linkbutton
+   {
+       text-decoration:none;
+       color:#FFF;
+   }
+   
+   .linkbutton:hover
+   {
+       text-decoration:underline;
+   }
+

@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Site Fonts Start*/
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Myriad Pro'), local('Myriad Pro'), url(../font/MyriadPro-Regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Myriad Pro'), local('Myriad Pro'), url(../font/MyriadPro-Bold.otf) format('otf');
+}
+
+
+/*Site Common Part Start*/
+
+body
+{
+	margin:0px;
+	padding:0px;
+	background:url(../images/bg1.gif) repeat;
+	font-family:Calibri;
+}
+
+img
+{
+	border:none;
+}
+
+h1,h2,h3,h4,h5,h6,p,div,span,td,ul,li,a
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+a,a:hover
+{
+	text-decoration:none;
+	color:#000;
+}
+
+header, section, footer, aside, nav, main, article, figure
+{
+	display: block;
+}
+.wrapper
+{
+	width: 920px;
+	height:auto;
+	margin: 5px auto;
+	border:1px solid #CCC;
+	border-radius:10px 10px 10px 10px;
+	box-shadow:0px 2px 20px 0px #99dcf7;
+}
+
+header
+{
+		width:920px;
+		height:150px;
+		background:url(../images/header_bg.png);
+		border-radius:10px 10px 0px 0px;
+		
+		overflow:hidden;
+}
+.logo
+{
+	width:170px;
+	height:150px;
+	border:0px solid red;
+	float:left;
+}
+.banner
+{
+	width:750px;
+	height:150px;
+	border:0px solid red;
+	float:right;
+	background:url(../images/bannerJPG.jpg) no-repeat;
+}
+
+.content
+{
+	width:900px;
+	height:auto;
+	min-height:400px;
+	border:0px solid red;
+	margin:5px auto;
+}
+
+aside.left_content
+{
+	width:450px;
+	min-height:200px;
+	border:0px solid red;
+	float:left;
+}
+aside.right_content
+{
+	width:430px;
+	min-height:200px;
+	border:0px solid red;
+	float:right;
+}
+.hotel_form
+{
+	font-size:12px;
+}
+.hotel_form tr td 
+{
+	padding:2px 0px;
+	color:#0896FF;
+}
+.lahor_hotel_title
+{
+	
+	height:60px;
+	background:rgba(255,255,255,0.3);
+	margin: 15px 10px;
+	position: absolute;
+	font-size: 34px;
+	padding: 10px;	
+	font-family:collabri;
+}
+#hotel_search_btn
+{
+	width:150px;
+	height:30px;
+}
+.slider_hot_destination
+{
+	width:900px;
+	height:auto;
+	height:200px;
+	border:0px solid red;
+	margin:10px auto;	
+	background:#F3F4F4;
+	padding-top:10px;
+}
+.main_box
+{
+	width:430px;
+	border:0px solid black;
+	min-height:300px;
+	background:#f3f4f4;
+	margin:10px 0px;
+}
+.b-popular_list, .b-popular_item {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+.b-popular_item:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0px;
+    content: " ";
+    clear: both;
+    height: 0px;
+}
+element {
+}
+.b-popular_item {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFF #FFF #EDF0F5;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.b-popular_item:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.b-popular_item {
+    clear: both;
+    padding: 7px 6px;
+    position: relative;
+    transition: border 0.3s ease 0s;
+    z-index: 0;
+}
+
+.b-sprite-3 .b-app_dots {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    overflow: hidden;
+    margin-top: -9px;
+    text-indent: -9999px;
+}
+.dot_img
+{
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    overflow: hidden;
+    margin-top: -9px;
+    text-indent: -9999px;
+}
+
+.b-sprite .b-app_dots {
+    background-position: -613px -395px !important;
+    //width: 11px !important;
+    height: 19px !important;
+}
+a:link {
+    color: #0896FF;
+    font-weight: bold;
+}
+.b-sprite {
+    //background-image: url(../images/dots-pic.png) !important;
+    background-repeat: no-repeat !important;
+}
+.b-popular_item h3, .b-popular_item p {
+    overflow: hidden;
+    display: inline-block;
+    width: 70%;
+}
+.b-popular_item .b-popular_country {
+    margin: -5px 0px 5px;
+}
+.b-popular_item img {
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.hotel_banner_islamabad
+{
+	width:430px;
+	height:100px;
+	background:url(../images/islamabad_hotel_banner.jpg) no-repeat;
+	border:0px solid red;
+	margin-bottom:10px;
+}
+.hotel_banner_lahor
+{
+	width:430px;
+	height:100px;
+	background:
+	url(../images/lahor_hotel_banner.jpg) no-repeat;
+	border:0px solid red;
+	margin-bottom:10px;
+}
+.hotel_ditails
+{
+	border:0px solid red;
+	width:210px;
+	height:100px;
+	float:left;
+}
+.hotel_ditails_price
+{
+	border:0px solid red;
+	width:90px;
+	height:100px;
+	float:right;
+}
+.hotel_ditails_price span
+{
+	font-size: 0.55em;
+	font-weight: normal;
+}
+.cheapest_roomtype {
+    font-size: 0.88em;
+    color: #003580;
+    margin-bottom: 2px;
+}
+span.littlescore {
+    font-size: 0.88em;
+    color: #666;
+    display: block;
+    margin-bottom: 2px;
+}
+span.lastbooking {
+    font-size: 0.88em;
+    color: #690;
+    display: block;
+    margin-bottom: 2px;
+}
+
+footer
+{
+	width:920px;
+	height:150px;
+	background:url(../images/footer_bg.png);
+	border-radius:0px 0px 10px 10px;
+	overflow:hidden;
+}
+.left_footer
+{
+	width: 580px;
+	min-height: 64px;
+	border: 0px solid #F00;
+	float: left;
+	margin-top: 45px;
+	padding-left: 20px;
+}
+.right_footer
+{
+	width:300px;
+	min-height:100px;
+	border:0px solid red;
+	float:right;
+	margin-top: 15px;
+}
+.footer_logo
+{
+	float:left;
+	width:60px;
+	overflow:hidden;
+	border-radius:10%;
+}
+footer p
+{
+	font-size:10px;
+	margin-top: 18px;
+	margin-left: 66px;
+}
+.social_media
+{
+	border:0px solid red;
+	width:225px;
+	margin: 5px auto;
+}
+.social_media img
+{
+	margin:6px;	
+	box-shadow: 0px 0px 3px 3px #FFF;
+}
+.payment_method
+{
+	border:0px solid red;
+	width:210px;
+	margin: 5px auto;
+}
+.payment_method img
+{
+	margin:3px;
+	box-shadow: 0px 0px 3px 3px #FFF;
+}
+
+
+
+
+
+
+/*moiuse part slider*/
+
+.moments-part{
+	width:900px;
+	height:auto;
+	float:left;
+	//background:#ffffff;
+	//border-bottom:#d0cccc solid 1px;
+	
+}
+.moments-part h1{
+	font:Bold 20px "Myriad Pro", Arial;
+	color:#666666;
+	padding-left:15px;
+	line-height:15px;
+}
+.moments-part ul li{width:285px;height:auto;float:left;background:url(../images/spot-bg.png) repeat;padding:4px;margin-right:30px;}
+
+
+.gallery_item{ padding:0px; position:relative; overflow:hidden;}
+.gallery_item img{}
+.gallery_item span{ position:absolute; top:-60px; left:38%; z-index:9999;}
+
+#gallery-bg {
+	width:900px;
+	height:180px;
+	float:left;
+}
+

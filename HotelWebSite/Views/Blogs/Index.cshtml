@@ -1,0 +1,129 @@
+﻿@using HotelWebSite.Models;
+
+@{
+    ViewBag.Title = "Best Hotels in islamabad | Hotel Booking in Islamabad";
+
+    ViewBag.keywords = "Hotel Depapae Booking / Best hotels in Islamabad ";
+
+    ViewBag.Description = "Find great Islamabad hotel rates for hotel booking in Islamabad. Enjoy a relaxing stay at one of the best hotels in Islamabad Pakistan. Book room online.";
+
+    var blogs = (List<Post>)ViewBag.blogs;
+
+    List<HotelDePapaeMVC.Models.PropertySearch> results = new List<HotelDePapaeMVC.Models.PropertySearch>();
+
+
+    if (TempData.ContainsKey("roomList"))
+    {
+        results = (List<HotelDePapaeMVC.Models.PropertySearch>)TempData["roomList"];
+    }
+}
+
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Find out Everything You Need for Hotel Booking in Islamabad</h1>
+            <ul class="breadcrumbs">
+                <li><a href="https://www.hoteldepapae.com/">Home</a></li>
+                <li class="active">Blog</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="blog-body content-area">
+    
+    <div class="container">
+        <br />
+
+        
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="row">
+                    @{
+                        foreach (var ro in blogs)
+                        {
+                            string detailUrl = "/BlogDetails/" + ro.PostId + "/" + ro.Slug;
+
+                            <!-- Blog box start -->
+                            <div class="blog-1">
+                                <div class="blog-inner">
+                                    <div class="blog-overflow">
+                                        <div class="blog-photo">
+                                            <img src="https://hoteldepapae.com/uploads/blog/@ro.DefaultImage" alt="@ro.Title" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <h3>
+                                            <a href="@detailUrl">@ro.Title</a>
+                                        </h3>
+                                        <ul class="post-meta clearfix">
+                                            <li>
+                                                <i class="fa fa-user-o"></i> @ro.Author
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar-check-o"></i> @ro.PublishedDate
+                                            </li>
+                                        </ul>
+                                        <p>@ro.ShortDescriptions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog box end -->
+
+                        }
+                    }
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12  col-xs-12">
+                <div class="sidebar shadow-lg">
+                    <div class="sidebar-widget popular-posts shadow-lg">
+                        <div class="main-title-2">
+                            <h3 style="color:#37404d;">Recent Properties</h3>
+                        </div>
+
+                        @foreach (var item in results)
+                        {
+                            <div class="d-flex popular-posts-box mb-3">
+                                <a class="pr-3" href="https://hoteldepapae.com/">
+                                    <img src="../uploads/@item.imgURL"
+                                         alt="small-photo"
+                                         class="flex-shrink-0 me-3" />
+                                </a>
+                                <div class="detail align-self-center">
+                                    <h4>
+                                        <a href="https://hoteldepapae.com/" style="color:black">@item.RoomCategory</a>
+                                    </h4>
+                                    <div class="listing-post-meta">
+                                        Starting From | <a href="#" style="color:black">@item.MinimumPrice</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+
+
+                    </div>
+                    <!-- Tags box start -->
+                    <div class="sidebar-widget tags-box mb-30 shadow-lg">
+                        <div class="main-title-2">
+                            <h3><span>Popular</span> Activities</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a href="#">Image</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Typography</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Slideshow</a></li>
+                            <li><a href="#">Post Formats</a></li>
+                            <li><a href="#">Sellers</a></li>
+                            <li><a href="#">WooCommerce</a></li>
+                        </ul>
+                    </div>
+                    <!-- Tags box end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />

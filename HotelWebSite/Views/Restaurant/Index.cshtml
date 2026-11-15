@@ -1,0 +1,378 @@
+﻿
+@{
+    ViewBag.Title = "Tabaq Restaurant | Best Desi Food Restaurant in Islamabad";
+    ViewBag.keywords = "Tabaq restaurant, best desi restaurant in Islamabad, tabaq restaurant menu, desi food restaurant in Islamabad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.canonical = "https://hoteldepapae.com/tabaq-desi-food-restaurant";
+    ViewBag.Description = "Tabaq Restaurant is the best desi restaurant in Islamabad serves Italian, Chinese and desi food. Order online from tabaq restaurant menu. Best desi restaurant in Islamabad.";
+
+    List<HotelDePapaeMVC.Models.PropertySearch> results = new List<HotelDePapaeMVC.Models.PropertySearch>();
+
+
+    if (TempData.ContainsKey("roomList"))
+    {
+        results = (List<HotelDePapaeMVC.Models.PropertySearch>)TempData["roomList"];
+    }
+
+}
+
+<!-- Sub banner start -->
+<div class="sub-banner">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Tabaq Restaurant – The Best Desi Restaurant in Islamabad</h1>
+            <ul class="breadcrumbs">
+                <li><a href="https://www.hoteldepapae.com/">Home</a></li>
+                <li class="active">Restaurant</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+<!-- Blog body start -->
+<div class="blog-body content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="accordion-example-box mb-50">
+                            <h3 class="heading-2" style="color:black">
+                                Tabaq Restaurant – Try Out Best Desi Food in Islamabad
+                            </h3>
+                            <p>
+                                Tabaq Restaurant is one of Islamabad's best places to enjoy authentic Pakistani cuisine. The best restaurant in Islamabad resides in the city's heart, offering a wide range of mouth-watering dishes. Tabaq Restaurant's menu includes classic Pakistani staples, such as Chicken Tikka, Mutton Karahi, Kebabs, and other desi food. The restaurant in Islamabad also offers an extensive selection of vegetarian dishes, making it an excellent option for those looking for a tasty and hearty meal. Our team at Tabaq Restaurant is passionate about giving their diners an outstanding dining experience, and they go as far as to ensure that every dish is perfectly prepared. Whether you're a fan of Pakistani food or simply looking for a delicious meal, Tabaq Restaurant is sure to exceed your expectations.
+                            </p>
+                            <div class="faq-accordion accordion accordion-flush faq-accordion"
+                                 id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                            Breakfast
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingOne"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text ">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/01.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseTwo">
+                                            Fresh Fruit Juices
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingTwo"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/02.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading5">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse5"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse5">
+                                            Salads
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse5"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading5"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/03.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingT">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseT"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseT">
+                                            Snaks
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseT"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingT"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/04.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading6">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse6"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse6">
+                                            Bar BQ
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse6"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading6"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/05.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading7">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse7"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse7">
+                                            Tits Bits
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse7"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading7"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/06.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading8">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse8"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse8">
+                                            Traditional
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse8"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading8"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/07.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading9">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse9"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse9">
+                                            Soups
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse9"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading9"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/08.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading10">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse10"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse10">
+                                            Chinese Special
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse10"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading10"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/09.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading11">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse11"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse11">
+                                            Rice Selection
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse11"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading11"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/10.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading12">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse12"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse12">
+                                           Desserts
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse12"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading12"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/11.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item mb-10">
+                                    <h2 class="accordion-header" id="flush-heading13">
+                                        <button class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapse13"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapse13">
+                                           Hot & Cold Drinks
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse13"
+                                         class="accordion-collapse collapse"
+                                         aria-labelledby="flush-heading13"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <div class="p-text">
+                                                <img style="max-width:100%" src="~/Content/images/Menu/09.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="color: #990011; text-align: center">
+                                *PRICES ARE SUBJECT TO A 10% SERVICE CHARGE AND APPLICABLE TAXES
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog box end -->
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <div class="sidebar">
+                    <!-- Popular posts start-->
+                    <div class="sidebar-widget popular-posts shadow-lg">
+                        <div class="main-title-2">
+                            <h3 style="color:#37404d;">Recent Properties</h3>
+                        </div>
+
+
+                        @foreach (var item in results)
+                        {
+                            <div class="d-flex popular-posts-box mb-3">
+                                <a class="pr-3" href="https://hoteldepapae.com/">
+                                    <img src="../uploads/@item.imgURL"
+                                         alt="small-photo"
+                                         class="flex-shrink-0 me-3" />
+                                </a>
+                                <div class="detail align-self-center">
+                                    <h4>
+                                        <a href="https://hoteldepapae.com/" style="color:black">@item.RoomCategory</a>
+                                    </h4>
+                                    <div class="listing-post-meta">
+                                        Starting From | <a href="#" style="color:black">@item.MinimumPrice</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+
+                    </div>
+                    <!-- Popular posts end-->
+                    <!-- Category posts start -->
+                    <!-- Category posts end -->
+                    <!-- Social media start -->
+                    <div class="social-media sidebar-widget clearfix shadow-lg">
+                        <!-- Main Title 2 -->
+                        <div class="main-title-2">
+                            <h3 style="color:#37404d;"><span>Social</span> Media</h3>
+                        </div>
+                        <!-- Social list -->
+                        <ul class="social-list">
+                            <li><a href="https://www.facebook.com/hoteldepapae" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/dePapae_ISB" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/hoteldepapae" target="_blank" class="instagram-bg"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.reddit.com/user/hoteldepapae" target="_blank" class="reddit-bg"><i class="fa fa-reddit"></i></a></li>
+                            <li><a href="https://www.quora.com/profile/Hotel-de-Papae" target="_blank" class="q-bg"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Social media end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog body end -->

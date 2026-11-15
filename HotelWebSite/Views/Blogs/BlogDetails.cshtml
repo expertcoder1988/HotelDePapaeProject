@@ -1,0 +1,136 @@
+﻿@using HotelWebSite.Models;
+
+
+
+@{
+
+    List<HotelDePapaeMVC.Models.PropertySearch> results = new List<HotelDePapaeMVC.Models.PropertySearch>();
+
+
+    if (TempData.ContainsKey("roomList"))
+    {
+        results = (List<HotelDePapaeMVC.Models.PropertySearch>)TempData["roomList"];
+    }
+
+    var blog = (List<Post>)TempData["blog"];
+    ViewBag.Title = blog[0].Title;
+    ViewBag.MetaDesciption = blog[0].MetaDescription;
+    ViewBag.Keyword = blog[0].Keywords;
+
+
+
+}
+
+<meta name="Keyword" value="@ViewBag.Keyword" />
+<div class="blog-body content-area">
+    <div class="container">
+        <h2>@blog[0].Title</h2>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+                <!-- Blog box start -->
+                <div class="blog-box clearfix">
+                    <img src="https://hoteldepapae.com/uploads/blog/@blog[0].DefaultImage" alt="@blog[0].Title" class="img-fluid w-100">
+                    <!-- detail -->
+                    <div class="detail">
+                        <!--Main title -->
+                        <h3 class="title">
+                            <a href="#">@blog[0].Title</a>
+                        </h3>
+                        <!-- Post meta -->
+                        <div class="post-meta">
+                            <span><a href="#"><i class="fa fa-user"></i>@blog[0].Author</a></span>
+                            <span><a><i class="fa fa-calendar "></i>@blog[0].PublishedDate</a></span>
+                        </div>
+                        <!-- paragraph -->
+                        <p>@Html.Raw(blog[0].Description)</p>
+
+
+                        <!--<div class="row clearfix t-s">
+                            <div class="col-lg-7 col-md-7 col-sm-12">-->
+                        <!-- Tags box start -->
+                        <!--<div class="tags-box">
+                            <h2>Tags</h2>
+                            <ul class="tags">
+                                <li><a href="#">Image</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Slideshow</a></li>
+                            </ul>
+                        </div>-->
+                        <!-- Tags box end -->
+                        <!--</div>
+                        <div class="col-lg-5 col-md-5 col-sm-12">-->
+                        <!-- Blog Share start -->
+                        <!--<div class="social-media clearfix blog-share">
+                            <h2>Share</h2>-->
+                        <!-- Social list -->
+                        <!--<ul class="social-list">
+                                <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>-->
+                        <!-- Blog Share end -->
+                        <!--</div>
+                        </div>-->
+                    </div>
+                </div>
+                <!-- Blog box end -->
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12  col-xs-12">
+                <div class="sidebar shadow-lg">
+                    <div class="sidebar-widget popular-posts shadow-lg">
+                        <div class="main-title-2">
+                            <h3 style="color:#37404d;">Recent Properties</h3>
+                        </div>
+
+                        @foreach (var item in results)
+                        {
+                            <div class="d-flex popular-posts-box mb-3">
+                                <a class="pr-3" href="https://hoteldepapae.com/">
+                                    <img src="~/Uploads/@item.imgURL"
+                                         alt="small-photo"
+                                         class="flex-shrink-0 me-3" />
+                                </a>
+                                <div class="detail align-self-center">
+                                    <h4>
+                                        <a href="https://hoteldepapae.com/" style="color:black">@item.RoomCategory</a>
+                                    </h4>
+                                    <div class="listing-post-meta">
+                                        Starting From | <a href="#" style="color:black">@item.MinimumPrice</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+
+
+                    </div>
+                    <!-- Tags box start -->
+                    <div class="sidebar-widget tags-box mb-30 shadow-lg">
+                        <div class="main-title-2">
+                            <h3><span>Popular</span> Activities</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a href="#">Image</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Typography</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Slideshow</a></li>
+                            <li><a href="#">Post Formats</a></li>
+                            <li><a href="#">Sellers</a></li>
+                            <li><a href="#">WooCommerce</a></li>
+                        </ul>
+                    </div>
+                    <!-- Tags box end -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

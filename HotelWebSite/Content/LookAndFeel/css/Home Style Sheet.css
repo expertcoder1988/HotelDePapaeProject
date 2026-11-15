@@ -1,0 +1,59 @@
+﻿.wrapper
+{
+    width:100%;
+    height:100%;
+}
+.body
+{
+    width:100%;
+    height:100%;
+    
+}
+.top
+{
+    width: 100%;
+    height: 100px;
+    background-image: url('../images/Header.PNG');
+    background-repeat: repeat-x;
+}
+.leftMenu
+{
+width: 200px;
+height: auto;
+
+/*margin-left: 145px;*/
+margin-left: 29px;
+position:absolute;
+}
+
+.contentarea
+{
+width: 80%;
+
+/*margin-left: 350px;*/
+    margin-left: 251px;
+
+}
+.gridView
+{
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:Red;
+}
+.footer
+{
+    width:100%;
+    height:50px;
+        background-image: url('../images/Header.PNG');
+    background-repeat: repeat-x;
+    
+}
+.middle
+{
+    width:100%;
+    height:auto;
+    /*margin-top: 50px;*/
+
+}
